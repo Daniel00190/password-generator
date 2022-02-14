@@ -11,13 +11,12 @@
    <body>
       <div class="main-container">
          <form>
-            <h2>MY PASSWORD GENERATOR</h2>
+            <h2>PASSWORD GENERATOR</h2>
             <div class="show-password">
-               <div id="usernameField">click generate button</div>
+               <div id="usernameField">click generate</div>
                <button class="clipboard" type="button">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
-                     width="22"
                      fill="currentColor"
                      class="bi bi-clipboard"
                      viewBox="0 0 16 16"
@@ -31,41 +30,38 @@
                   </svg>
                </button>
             </div>
-            <button class="generate" type="button">
-               generate a new username
+            <button class="generate" type="button">generate username</button>
+            <div class="show-password">
+               <div id="passwordField">click generate</div>
+               <button class="clipboard" type="button">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     fill="currentColor"
+                     class="bi bi-clipboard"
+                     viewBox="0 0 16 16"
+                  >
+                     <path
+                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+                     />
+                     <path
+                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+                     />
+                  </svg>
+               </button>
+            </div>
+            <button class="generatePass" type="button">
+               generate password
             </button>
-            <div class="show-password">
-               <div id="passwordField">click generate button</div>
-               <button class="clipboard" type="button">
-                  <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     width="22"
-                     fill="currentColor"
-                     class="bi bi-clipboard"
-                     viewBox="0 0 16 16"
-                  >
-                     <path
-                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
-                     />
-                     <path
-                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
-                     />
-                  </svg>
-               </button>
-            </div>
             <div class="pass-length">
-               <h3>Enter password legth</h3>
+               <h3>PASSWORD LENGTH</h3>
                <input
                   class="length"
                   type="number"
                   min="6"
-                  max="20"
-                  value="20"
+                  max="22"
+                  value="22"
                />
             </div>
-            <button class="generatePass" type="button">
-               generate a new password
-            </button>
          </form>
       </div>
       <script src="password.js"></script>
